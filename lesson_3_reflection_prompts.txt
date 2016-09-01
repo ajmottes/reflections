@@ -1,33 +1,68 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    I would want to use a remote repository when: (1) I was working on a project
-    using more than one machine; (2) I was working on a project with other people
-    who would be contributing to the project; or (3) I wanted to share my code
-    with other people as an open-source project.
+    I would want to use a remote repository when: (1) I was working on a project using more than one machine; (2) I was working on a project 
+    with other people who would be contributing to the project; or (3) I
+    wanted to share my code with other people as an open-source project.
     
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    If there are more that one person working on a project, you may not want
+    to pull their contributions every time they push one -- might be a
+    distraction to the work you are trying to do.  Same if there are
+    multiple branches and you are only working on one at the moment.  No need
+    to get all the updates to the other branches until you decide you want
+    them.
+
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    A branch is a change made to a single repository either locally or on
+    GitHub.  It creates a new branch for the repository that can be added
+    to independently of the other branches.  Cloning involves directly copying one repository into another repository.  This can happen either
+    locally or from GitHub to a local repository.  Forking is a special form
+    of cloning where it is done from one GitHub repository to another.  It is
+    useful when you want to modify someone else's repository and you do not
+    have permission to modify the original one.  You fork it and then modify
+    the forked you have created.  Cloning and branching takes place in 
+    repositories for which you do have permission to modify in the first
+    place.
+    
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    If you are going somewhere where you do not have internet access, having
+    the last know state of the remote would allow you to see what has been
+    going on on GitHub.  You could even decide if you wanted to merge any of
+    the changes made on GitHub into the local branch and perform the merges
+    locally.  Then you could push them to GitHub when you can next access the
+    internet.
+
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Without using GitHub, you would have to collaborate by sending copies
+    of the files with proposed changes to the other people to get their
+    comments.  With redlining software, the changes could be indicated in
+    the document and could be accepted or rejected or commented upon.  It
+    would be easier this way only because you didn't have the overhead of 
+    running everything through Git and GitHub.  The actual collaboration is
+    easier using Git/GitHub given the ability to create branches, merge and
+    immediately see just the changes made by each individual commit.
+
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Master should be the production code that everyone knows works.  Changes
+    should be worked on in other branches, agreed upon by whoever is working
+    on the project and then only merged into the master branch when it is
+    considered safe.  This has the benefit of assuring that the code in the
+    master branch will always work and it only contains that code which the
+    team (and team leader) believe should be in the master branch.  Once 
+    changes are accepted they can be merged into the master branch.
